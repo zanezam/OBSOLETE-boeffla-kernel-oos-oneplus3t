@@ -205,7 +205,7 @@ static u_int8_t* get_wmi_cmd_string(WMI_CMD_ID wmi_command)
 		CASE_RETURN_STRING(WMI_PDEV_GET_TPC_CONFIG_CMDID);
 
 		/** set the base MAC address for the physical device before a VDEV is created.
-		 *  For firmware that doesn?t support this feature and this command, the pdev
+		 *  For firmware that doesn’t support this feature and this command, the pdev
 		 *  MAC address will not be changed. */
 		CASE_RETURN_STRING(WMI_PDEV_SET_BASE_MACADDR_CMDID);
 

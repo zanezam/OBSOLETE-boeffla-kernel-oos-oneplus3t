@@ -7191,9 +7191,9 @@ eHalStatus sme_CloseSession(tHalHandle hHal, tANI_U8 sessionId,
 
     \param pAPWPSIES - pointer to a caller allocated object of tSirAPWPSIEs
 
-    \return eHalStatus ? SUCCESS ?
+    \return eHalStatus  SUCCESS 
 
-                         FAILURE or RESOURCES ? The API finished and failed.
+                         FAILURE or RESOURCES  The API finished and failed.
 
   -------------------------------------------------------------------------------*/
 eHalStatus sme_RoamUpdateAPWPSIE(tHalHandle hHal, tANI_U8 sessionId, tSirAPWPSIEs *pAPWPSIES)
@@ -7222,9 +7222,9 @@ eHalStatus sme_RoamUpdateAPWPSIE(tHalHandle hHal, tANI_U8 sessionId, tSirAPWPSIE
 
     \param pAPSirRSNie - pointer to a caller allocated object of tSirRSNie with WPS/RSN IEs
 
-    \return eHalStatus ? SUCCESS ?
+    \return eHalStatus  SUCCESS 
 
-                         FAILURE or RESOURCES ? The API finished and failed.
+                         FAILURE or RESOURCES  The API finished and failed.
 
   -------------------------------------------------------------------------------*/
 eHalStatus sme_RoamUpdateAPWPARSNIEs(tHalHandle hHal, tANI_U8 sessionId, tSirRSNie * pAPSirRSNie)
@@ -13803,7 +13803,6 @@ VOS_STATUS sme_notify_ht2040_mode(tHalHandle hHal, tANI_U16 staId,
    vos_mem_copy(pHtOpMode->peer_mac, macAddrSTA.bytes,
                  sizeof(tSirMacAddr));
    pHtOpMode->smesessionId = sessionId;
-   pHtOpMode->chanMode = MODE_MAX;
 
    msg.type     = WDA_UPDATE_OP_MODE;
    msg.reserved = 0;
